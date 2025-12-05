@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"; 
-
+import AdminDashboard from '../adminDashboard/AdminDashboard';
 function Navbar() {
   return (
     <div className="bg-linear-to-b from-purple-300 via-rose-200 to-orange-100 text-gray-800 scroll-smooth font-serif animate-fade-in">
@@ -22,7 +22,7 @@ function Navbar() {
           <li><a href="#home" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Home</a></li>
           <li><a href="#why" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">About</a></li>
           <li><a href="#works" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Process</a></li>
-          <li><a href="#demo" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Demo</a></li>
+          <li><NavLink to="/admin" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Dashboard</NavLink></li>
            <li><a href="#contact" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Contact</a></li>
         </ul>
 
@@ -44,6 +44,7 @@ function Navbar() {
           </NavLink>
 
           {/* SIGNUP BUTTON */}
+          <NavLink to="/Signup">
           <button className="
             px-4 py-2 w-25 h-10 
             bg-linear-to-r from-purple-500 to-orange-500 text-white 
@@ -55,6 +56,7 @@ function Navbar() {
           ">
             Sign Up
           </button>
+          </NavLink>
         </div>
 
       </nav>

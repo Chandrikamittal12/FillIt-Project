@@ -11,20 +11,20 @@ function Signup() {
     "w-12 h-[2px] bg-gray-400";
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 flex items-center justify-center px-4 py-10">
-      <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-xl">
+    <div className="min-h-screen bg-linear-to-br from-rose-300 via-purple-300 to-purple-400 flex items-center justify-center px-4 py-10">
+      <div className="bg-linear-to-br from-orange-300  to-rose-300 p-6 rounded-2xl h-3/4 shadow-xxl  w-full max-w-xl  border border-purple-300/70">
 
         {/* Logo */}
-        <h1 className="text-3xl font-bold text-center text-purple-600 mb-1">FillIt</h1>
-        <p className="text-center text-gray-600 mb-6 text-sm">
+        <h1 className="text-4xl font-bold text-center text-rose-900   mb-1">FillIt</h1>
+        <p className="text-center text-gray-700 mb-6 text-md">
           Fast, secure & smart exam form filling portal.
         </p>
 
         {/* Stepper */}
         <div className="flex items-center justify-center mb-8">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ">
             <div className={stepClass(1)}>1</div>
-            <p className="text-xs mt-1">Role</p>
+            <p className="text-xs  mt-1">Role</p>
           </div>
 
           <div className={lineClass()}></div>
@@ -43,7 +43,7 @@ function Signup() {
         </div>
 
         {/* Step Heading */}
-        <h2 className="text-xl font-semibold text-gray-800 text-center mb-4">
+        <h2 className="text-xl font-semibold text-black text-center mb-4">
           {step === 1 && "Select Your Role"}
           {step === 2 && "Location Details"}
           {step === 3 && "Account Setup"}
@@ -53,17 +53,18 @@ function Signup() {
         {step === 1 && (
           <div className="space-y-4">
 
-            <label className="font-medium text-gray-700">Select Role *</label>
-            <select className="w-full border px-3 py-2 rounded-lg">
-              <option value="">Choose Role</option>
-              <option>Student</option>
-              <option>Employee</option>
-              <option>Admin</option>
+            <label className="font-medium text-purple-600">Select Role *</label>
+            <select className="w-full border-2 border-purple-900 px-3 py-2 rounded-lg">
+              <option className="text-md font-extrabold">Select Role</option>
+              <option className="text-md ">User</option>
+              <option className="text-md ">Employee</option>
+              <option className="text-md ">Manager</option>
+              <option className="text-md ">Admin</option>
             </select>
 
             <button
               onClick={() => setStep(2)}
-              className="w-full bg-purple-600 text-white py-2 rounded-lg mt-4 hover:bg-purple-700 transition"
+              className="w-40 text-center bg-purple-600 text-white py-2 rounded-lg mt-4 hover:bg-purple-700 transition"
             >
               Next
             </button>
@@ -75,36 +76,36 @@ function Signup() {
           <div className="space-y-4">
 
             <div>
-              <label className="font-medium text-gray-700">Country *</label>
-              <select className="w-full border px-3 py-2 rounded-lg">
-                <option>Select Country</option>
+              <label className="font-medium text-purple-600 ">Country * </label >
+              <select className="w-full border-2  px-3 py-2 rounded-lg">
+                <option className="font-bold">Select Country</option>
                 <option>India</option>
                 <option>Nepal</option>
               </select>
             </div>
 
             <div>
-              <label className="font-medium text-gray-700">State *</label>
-              <select className="w-full border px-3 py-2 rounded-lg">
-                <option>Select State</option>
+              <label className="font-medium text-purple-600">State *</label>
+              <select className="w-full border-2  px-3 py-2 rounded-lg">
+                <option className="font-bold">Select State</option>
                 <option>Madhya Pradesh</option>
                 <option>Uttar Pradesh</option>
               </select>
             </div>
 
             <div>
-              <label className="font-medium text-gray-700">City *</label>
-              <select className="w-full border px-3 py-2 rounded-lg">
-                <option>Select City</option>
+              <label className="font-medium text-purple-600">City *</label>
+              <select className="w-full border-2  px-3 py-2 rounded-lg">
+                <option className="font-bold">Select City</option>
                 <option>Indore</option>
                 <option>Bhopal</option>
               </select>
             </div>
 
             <div>
-              <label className="font-medium text-gray-700">Gender *</label>
-              <select className="w-full border px-3 py-2 rounded-lg">
-                <option>Select Gender</option>
+              <label className="font-medium text-purple-600">Gender *</label>
+              <select className="w-full border-2  px-3 py-2 rounded-lg">
+                <option className="font-bold">Select Gender</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
@@ -114,7 +115,7 @@ function Signup() {
             <div className="flex justify-between">
               <button
                 onClick={() => setStep(1)}
-                className="px-5 py-2 border rounded-lg text-gray-700"
+                className="px-5 py-2  bg-purple-600 text-white rounded-lg  hover:bg-purple-600 hover:text-white"
               >
                 Previous
               </button>
@@ -134,60 +135,70 @@ function Signup() {
           <div className="space-y-4">
 
             {/* Name Row */}
-            <label className="font-medium text-gray-700">Full Name *</label>
-            <div className="flex gap-4">
+            <label className="font-medium text-purple-600">Full Name *</label>
+            <div className="flex gap-4 ">
               <input
                 type="text"
-                placeholder="First Name"
-                className="w-full border px-3 py-2 rounded-lg"
+                placeholder="Example: John Doe"
+                className="w-full bg-purple-50 text-gray-700 placeholder-gray-500
+               hover:border-purple-400
+              focus:outline-none focus:ring-2 focus:ring-purple-400 px-3 py-2 rounded-lg"
                 required
               />
-              {/* <input
-                type="text"
-                placeholder="Last Name"
-                className="w-1/2 border px-3 py-2 rounded-lg"
-                required
-              /> */}
+            
             </div>
 
             {/* Email + Mobile */}
-            <label className="font-medium text-gray-700">Contact Details *</label>
+            <div className=" flex gap-4">
+              <div className="flex flex-col w-3/4 ">
+            <label className="font-medium text-purple-600">Contact Details *</label>
             <div className="flex gap-4">
               <input
                 type="email"
-                placeholder="Email"
-                className="w-1/2 border px-3 py-2 rounded-lg"
+                placeholder="Ex-Johndoe123@gmail.com"
+                className="w-full bg-purple-50 text-gray-700 placeholder-gray-500
+               hover:border-purple-400
+              focus:outline-none focus:ring-2 focus:ring-purple-400 px-3 py-2 rounded-lg"
                 required
               />
+              </div>
+               </div>
+               <div className=" flex flex-col">
+            <label className="font-medium text-purple-600">Contact Details *</label>
               <input
                 type="text"
-                placeholder="Mobile Number"
-                className="w-1/2 border px-3 py-2 rounded-lg"
+                placeholder="Ex: +1234567890"
+                className="w-full bg-purple-50 text-gray-700 placeholder-gray-500
+               hover:border-purple-400
+              focus:outline-none focus:ring-2 focus:ring-purple-400  px-3 py-2 rounded-lg"
                 required
               />
-            </div>
+           </div>
+           </div>
 
             {/* Password */}
-            <label className="font-medium text-gray-700">Password Setup *</label>
+            <label className="font-medium text-purple-600">Password Setup *</label>
             <div className="flex gap-4">
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full border px-3 py-2 rounded-lg"
+                className="w-full bg-purple-50 text-gray-700 placeholder-gray-500
+               hover:border-purple-400
+              focus:outline-none focus:ring-2 focus:ring-purple-400 px-3 py-2 rounded-lg"
                 required
               />
             </div>
 
             {/* T&C */}
             <label className="flex items-center gap-2 mt-2">
-              <input type="checkbox" required />
-              <span className="text-gray-600 text-sm">I accept Terms & Conditions</span>
+              <input type="checkbox" className="bg-rose-900" required />
+              <span className="text-gray-900 text-sm">I accept Terms & Conditions</span>
             </label>
 
             <div className="flex justify-between mt-3">
               <button
                 onClick={() => setStep(2)}
-                className="px-5 py-2 border rounded-lg text-gray-700"
+                className="px-5 py-2  bg-purple-600 text-white rounded-lg  hover:bg-purple-600 hover:text-white"
               >
                 Previous
               </button>
@@ -198,8 +209,14 @@ function Signup() {
             </div>
           </div>
         )}
-
+          {/* Login */}
+        <p className="text-center text-purple-800 mt-6 text-sm"> Exsisting User?{" "}
+          <a href="/Login" className="font-md  font-bold underline">
+            Login
+          </a>
+        </p>
       </div>
+      
     </div>
   );
 }

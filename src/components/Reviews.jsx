@@ -17,7 +17,7 @@ const Reviews = () => {
                         hover:shadow-2xl hover:scale-105 transition-all duration-300 
                         hover:border-purple-400">
                             <img
-            src="..\public\User1.avif"
+            src=".\public\User1.avif"
             alt="User 1"
             className="w-15 h-15 rounded-full mx-auto mb-4 object-cover shadow-xl border"
           />
@@ -33,7 +33,7 @@ const Reviews = () => {
                         hover:shadow-2xl hover:scale-105 transition-all duration-300 
                         hover:border-purple-400">
                             <img
-            src="../public/User1.avif"
+            src="./public/User1.avif"
             alt="user2"
             className="w-15 h-15 rounded-full mx-auto mb-4 object-cover shadow-xl border"
           />
@@ -49,7 +49,7 @@ const Reviews = () => {
                         hover:shadow-2xl hover:scale-105 transition-all duration-300 
                         hover:border-purple-400">
                              <img
-            src="../public/User1.avif"
+            src="./public/User1.avif"
             alt="user3"
             className="w-15 h-15 rounded-full mx-auto mb-4 object-cover shadow-xl border"
           />
