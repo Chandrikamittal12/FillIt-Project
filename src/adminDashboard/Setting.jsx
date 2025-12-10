@@ -14,7 +14,7 @@ const Settings = () => {
       <div className="w-full flex-col items-end max-w-3xl space-y-10">
 
         {/* Account Settings */}
-        <section className="p-6 rounded-2xl bg-linear-to-br from-white/10 via-rose-300/30 to-purple-400/30 border border-transparent bg-clip-padding relative shadow-[0_0_25px_rgba(255,120,0,0.15)] before:absolute before:inset-0 before:rounded-2xl before:p-2 border-2 before:bg-linear-to-r before:from-orange-500 before:via-rose-500 before:to-purple-600 before:-z-10">
+        <section className="p-6 rounded-2xl bg-linear-to-br from-white/10 via-rose-300/30 to-purple-400/30  border-transparent bg-clip-padding relative shadow-[0_0_25px_rgba(255,120,0,0.15)] before:absolute before:inset-0 before:rounded-2xl before:p-2 border-2 before:bg-linear-to-r before:from-orange-500 before:via-rose-500 before:to-purple-600 before:-z-10">
           <h2 className="text-xl font-semibold mb-4">Account Settings</h2>
 
           <div className="space-y-4">
@@ -43,7 +43,7 @@ const Settings = () => {
         </section>
 
         {/* Change Password */}
-        <section className="p-6 rounded-2xl bg-linear-to-br from-white/30 via-purple-400 to-rose-400 border border-transparent bg-clip-padding relative shadow-[0_0_25px_rgba(255,120,0,0.15)] before:absolute before:inset-0 before:rounded-2xl before:p-[2px] before:bg-linear-to-r before:from-orange-500 before:via-rose-500 before:to-purple-600 before:-z-10">
+        <section className="p-6 rounded-2xl bg-linear-to-br from-white/30 via-purple-400 to-rose-400 border border-transparent bg-clip-padding relative shadow-[0_0_25px_rgba(255,120,0,0.15)] before:absolute before:inset-0 before:rounded-2xl before:p-2 before:bg-linear-to-r before:from-orange-500 before:via-rose-500 before:to-purple-600 before:-z-10">
           <h2 className="text-xl font-semibold mb-4">Change Password</h2>
 
           <div className="space-y-4">
@@ -70,7 +70,7 @@ const Settings = () => {
         </section>
 
         {/* Notification Settings */}
-        <section className="p-6 rounded-2xl bg-linear-to-br from-rose/30 via-white/10 to-purple/20 border border-transparent bg-clip-padding relative shadow-[0_0_25px_rgba(255,120,0,0.15)] before:absolute before:inset-0 before:rounded-2xl before:p-[2px] before:bg-linear-to-r before:from-orange-500 before:via-rose-500 before:to-purple-600 before:-z-10">
+        <section className="p-6 rounded-2xl bg-linear-to-br from-rose/30 via-white/10 to-purple/20 border border-transparent bg-clip-padding relative shadow-[0_0_25px_rgba(255,120,0,0.15)] before:absolute before:inset-0 before:rounded-2xl before:p-2px before:bg-linear-to-r before:from-orange-500 before:via-rose-500 before:to-purple-600 before:-z-10">
           <h2 className="text-xl font-semibold mb-4">Notification Preferences</h2>
 
           <div className="space-y-4 text-gray-800">

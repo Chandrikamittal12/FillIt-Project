@@ -19,6 +19,27 @@ import Profile from './adminDashboard/Profile'
 import Settings from '../src/adminDashboard/Setting'
 import SubAdminOverview from './adminDashboard/SubAdminOverview'
 import FormManagement from './adminDashboard/FormManagement'
+import EmployeeDashboard from './employeeDashboard/EmployeeDashboard'
+import EmployeeHome from './employeeDashboard/EmployeeHome'
+import RequestInbox from './employeeDashboard/RequestInbox'
+import PendingRequests from './employeeDashboard/PendingRequests'
+import CompletedRequests from './employeeDashboard/CompletedRequests'
+// import Communication from './employeeDashboard/Communication'
+import SubAdminDashboard from './subAdminDashboard/SubAdminDashboard'
+import SubAdminHome from './subAdminDashboard/SubAdminHome'
+import RequestFromAdmin from './subAdminDashboard/RequestFromAdmin'
+import TeamsManagement from './subAdminDashboard/TeamsManagement'
+import EmployeeWorkload from './subAdminDashboard/EmployeeWorkload'
+import AssignForm from './subAdminDashboard/AssignForm'
+import RequestTracking from './subAdminDashboard/RequestTracking'
+import Communication from './subAdminDashboard/Communication'
+import UserDashboard from './userDashboard/UserDashboard'
+import UserHome from './userDashboard/UserHome'
+import UserForm from './userDashboard/UserForm'
+import UserPending from './userDashboard/UserPending'
+import UserHistory from './userDashboard/UserHistory'
+import UserCommunication from './userDashboard/UserCommunication'
+
 
 const App = () => {
   return (
@@ -26,13 +47,15 @@ const App = () => {
 
      <BrowserRouter>
     <Routes>
+
+      {/*Landing page*/}
       <Route path="/" element={<Navbar/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
-    </Routes>
+    
 
       {/* Admin */}
-      <Routes>
+      
         
         <Route path='admin' element={<AdminDashboard />}>
           <Route index element={<AdminHome />} />
@@ -44,8 +67,44 @@ const App = () => {
           <Route path='profile' element={<Profile />} />
           <Route path='settings' element={<Settings />} />
         </Route>
+
+
+         {/* Employee */}
+        <Route path='/employee' element={<EmployeeDashboard />}>
+           <Route index element={<EmployeeHome />} />
+           <Route path='completed' element={<CompletedRequests />} />
+         <Route path='requests' element={<RequestInbox />} />
+          <Route path='pending' element={<PendingRequests />} />
+          {/* <Route path='communication' element={<Communication />} /> */}
+        </Route>
+
+           {/* Sub Admin */}
+        <Route path='/subAdmin' element={<SubAdminDashboard/>}>
+          <Route index element={<SubAdminHome />} />
+          <Route path='requests' element={<RequestFromAdmin />} />
+          <Route path='teams' element={<TeamsManagement />} />
+          <Route path='workload' element={<EmployeeWorkload />} />
+          <Route path='assign-form' element={<AssignForm />} />
+          <Route path='request-tracking' element={<RequestTracking />} />
+          <Route path='communication' element={<Communication />} />
+        </Route>
+
+         {/* User */}
+        <Route path='/user' element={<UserDashboard />}>
+          <Route index element={<UserHome />} />
+          <Route path='form' element={<UserForm />} />
+          <Route path='pending' element={<UserPending />} />
+          <Route path='history' element={<UserHistory />} />
+          <Route path='communication' element={<UserCommunication />} />
+        </Route>
+
+
       </Routes>
     </BrowserRouter>
+
+    {/*landing page */}
+
+    
       {/* <Navbar/>*/}
       <Hero /> 
       <WhyChoose />

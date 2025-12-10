@@ -22,7 +22,10 @@ function Navbar() {
           <li><a href="#home" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Home</a></li>
           <li><a href="#why" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">About</a></li>
           <li><a href="#works" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Process</a></li>
-          <li><NavLink to="/admin" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Dashboard</NavLink></li>
+          <li><NavLink to="/admin" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">AdDashboard</NavLink></li>
+           <li><NavLink to="/employee" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">EmpDashboard</NavLink></li>
+           <li><NavLink to="/subAdmin" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">SubDashboard</NavLink></li>
+            <li><NavLink to="/user" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">UserDashboard</NavLink></li>
            <li><a href="#contact" className="hover:text-purple-800 transition-all duration-300 hover:underline hover:underline-offset-4">Contact</a></li>
         </ul>
 
