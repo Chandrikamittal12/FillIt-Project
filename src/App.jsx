@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+// import Signup1 from './changes/Signup1';
+//landing Page import
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhyChoose from './components/WhyChoose';
@@ -8,9 +10,11 @@ import Reviews from './components/Reviews';
 import DemoSection from './components/DemoSection';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import ForgotPassword from './components/ForgetPassword';
+//Authentication import
+import Login from './components/authentication/Login';
+import Signup from './components/authentication/Signup'; 
+import ForgotPassword from './components/authentication/ForgetPassword';
+//Admin Panel import
 import AdminDashboard from './adminDashboard/AdminDashboard';
 import AdminHome from './adminDashboard/AdminHome'
 import AllUsers from './adminDashboard/AllUsers'
@@ -20,12 +24,15 @@ import Profile from './adminDashboard/Profile'
 import Settings from '../src/adminDashboard/Setting'
 import SubAdminOverview from './adminDashboard/SubAdminOverview'
 import FormManagement from './adminDashboard/FormManagement'
+//Employee Panel import
 import EmployeeDashboard from './employeeDashboard/EmployeeDashboard'
 import EmployeeHome from './employeeDashboard/EmployeeHome'
 import RequestInbox from './employeeDashboard/RequestInbox'
 import PendingRequests from './employeeDashboard/PendingRequests'
 import CompletedRequests from './employeeDashboard/CompletedRequests'
 // import Communication from './employeeDashboard/Communication'
+
+//Sub Admin Panel import
 import SubAdminDashboard from './subAdminDashboard/SubAdminDashboard'
 import SubAdminHome from './subAdminDashboard/SubAdminHome'
 import RequestFromAdmin from './subAdminDashboard/RequestFromAdmin'
@@ -34,6 +41,7 @@ import EmployeeWorkload from './subAdminDashboard/EmployeeWorkload'
 import AssignForm from './subAdminDashboard/AssignForm'
 import RequestTracking from './subAdminDashboard/RequestTracking'
 import Communication from './subAdminDashboard/Communication'
+//User Panel import
 import UserDashboard from './userDashboard/UserDashboard'
 import UserHome from './userDashboard/UserHome'
 import UserForm from './userDashboard/UserForm'
@@ -52,8 +60,11 @@ const App = () => {
       {/*Landing page*/}
       <Route path="/" element={<Navbar/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/signup" element={<Signup/>}/>
+      <Route path="/signup" element={<Signup/>}/> 
       <Route path="/forgot" element={<ForgotPassword/>}/> 
+     
+       {/* <Route path="/signup" element={<Signup/>}/>  changes file signup*/}
+       
     
 
       {/* Admin */}
@@ -77,8 +88,8 @@ const App = () => {
            <Route path='completed' element={<CompletedRequests />} />
          <Route path='requests' element={<RequestInbox />} />
           <Route path='pending' element={<PendingRequests />} />
-          {/* <Route path='communication' element={<Communication />} /> */}
-        </Route>
+          {/* <Route path='communication' element={<Communication />} >*/}
+         </Route>
 
            {/* Sub Admin */}
         <Route path='/subAdmin' element={<SubAdminDashboard/>}>
@@ -107,20 +118,23 @@ const App = () => {
     {/*landing page */}
 
     
-      {/* <Navbar/>*/}
-      <Hero /> 
+      {/* <Navbar/> */}
+
+     <Hero />   
       <WhyChoose />
       <HowItWorks />
       <Reviews />
       <DemoSection />
       <Contact />
       <Footer />
-      {/* <Signup/> */}
+
+      {/* <Signup1/> */}
       
       
   
     </>
   );
-};
+}
+
 
 export default App;
