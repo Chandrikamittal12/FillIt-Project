@@ -3,7 +3,7 @@ import React from "react";
 const HowItWorks = () => {
   return (
     <section
-      id="works"
+      id="process"
       className="py-20 text-center bg-linear-to-t from-orange-200 via-rose-200 to-orange-200 "
     >
       <h2 className="text-4xl font-extrabold mb-12 text-purple-700">

@@ -110,7 +110,7 @@ const UserHome = () => {
             {/* PROFILE CARD */}
             <div className="bg-purple-300/30 p-6 rounded-2xl border border-purple-700/20 text-center hover:shadow-purple-600 shadow-lg hover:bg-purple-500/30 hover:scale-[1.02] transition">
               <User size={40} className="mx-auto text-purple-600" />
-              <h3 className="mt-3 text-2xl font-semibold">Welcome, Chandrika</h3>
+              <h3 className="mt-3 text-2xl font-semibold">Welcome {user}</h3>
               <p className="text-xs text-gray-800">User Dashboard</p>
             </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../../assets/User.png";
 
 const Reviews = () => {
   return (
@@ -17,7 +18,7 @@ const Reviews = () => {
                         hover:shadow-2xl hover:scale-105 transition-all duration-300 
                         hover:border-purple-400">
                             <img
-            src=".\public\User1.avif"
+            src={img}
             alt="User 1"
             className="w-15 h-15 rounded-full mx-auto mb-4 object-cover shadow-xl border"
           />
@@ -33,7 +34,7 @@ const Reviews = () => {
                         hover:shadow-2xl hover:scale-105 transition-all duration-300 
                         hover:border-purple-400">
                             <img
-            src="./public/User1.avif"
+            src={img}
             alt="user2"
             className="w-15 h-15 rounded-full mx-auto mb-4 object-cover shadow-xl border"
           />
@@ -49,7 +50,7 @@ const Reviews = () => {
                         hover:shadow-2xl hover:scale-105 transition-all duration-300 
                         hover:border-purple-400">
                              <img
-            src="./public/User1.avif"
+            src={img}
             alt="user3"
             className="w-15 h-15 rounded-full mx-auto mb-4 object-cover shadow-xl border"
           />
@@ -79,3 +80,4 @@ const Reviews = () => {
 };
 
 export default Reviews;
+

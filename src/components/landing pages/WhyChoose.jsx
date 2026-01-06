@@ -3,7 +3,7 @@ import React from "react";
 const WhyChoose = () => {
   return (
     <section
-      id="why"
+      id="why-choose"
       className="py-20 bg-linear-to-t from-white via-purple-200 to-white text-center"
     >
       <h2 className="text-4xl font-extrabold text-purple-600 mb-4">
